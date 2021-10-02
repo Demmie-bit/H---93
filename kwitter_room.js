@@ -1,5 +1,4 @@
 
-//ADD YOUR FIREBASE LINKS HERE
 const firebaseConfig = {
       apiKey: "AIzaSyDGWq2XaU4mN9dtE0yhIl9enCMVSZjgk6c",
       authDomain: "kwitter-e858b.firebaseapp.com",
@@ -37,4 +36,12 @@ function redirectToRoomName(name){
       localStorage.setItem("room_name", name);
       window.location = "kwitter_page.html";
 }
+function logout(){
+      localStorage.removeItem("user_name");
+      localStorage.removeItem("room_name");
+      window.location = "kwitter.html";
+
+}
+
+
 
